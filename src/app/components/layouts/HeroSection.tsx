@@ -1,3 +1,5 @@
+"use client";
+
 import { DownArrowIcon } from "../icons/icons";
 
 const HeroSection = () => {
@@ -29,8 +31,16 @@ const HeroSection = () => {
           </p>
           <p>이경민입니다.</p>
         </div>
-        <button className="flex items-center rounded-full bg-orange-500 px-6 py-2 font-bold text-white hover:bg-red-500 transition">
-          더 알아보기
+        <button
+          onClick={() => {
+            const aboutSection = document.getElementById("about");
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="flex items-center rounded-full bg-orange-500 px-6 py-2 font-bold text-white hover:bg-red-500 transition"
+        >
+          <span className="mr-1">더 알아보기</span>
           <DownArrowIcon />
         </button>
       </div>

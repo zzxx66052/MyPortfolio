@@ -1,8 +1,8 @@
 export const PencilIcon = () => {
   return (
     <svg
-      width="24"
-      height="24"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -22,57 +22,13 @@ export const MyProfileIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
     >
-      <rect
-        x="0.526316"
-        y="0.526316"
-        width="38.9474"
-        height="38.9474"
-        rx="19.4737"
-        fill="white"
-      />
-      <rect
-        x="0.526316"
-        y="0.526316"
-        width="38.9474"
-        height="38.9474"
-        rx="19.4737"
-        stroke="#E7E7E7"
-        strokeWidth="1.05263"
-      />
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M19.1995 8.64001C16.9903 8.64001 15.1995 10.4309 15.1995 12.64V32.96H23.1995V32.4483C23.1995 32.4484 23.1995 32.4484 23.1996 32.4484V32.96H25.1196C25.9874 32.96 26.8128 32.7782 27.5597 32.4505C28.3331 32.1545 29.0582 31.6948 29.6816 31.0713L33.8677 26.8853C35.4298 25.3232 35.4298 22.7905 33.8677 21.2284C33.1274 20.4881 32.1692 20.0987 31.1996 20.06V12.64C31.1996 10.4309 29.4087 8.64001 27.1996 8.64001C24.9904 8.64001 23.1996 10.4309 23.1996 12.64V26.2397L23.1995 26.2398V12.64C23.1995 10.4309 21.4086 8.64001 19.1995 8.64001ZM11.1992 8.64002C8.99008 8.64002 7.19922 10.4309 7.19922 12.64V26.88C7.19922 30.2379 9.92133 32.96 13.2792 32.96H15.1992V12.64C15.1992 10.4309 13.4084 8.64002 11.1992 8.64002Z"
-        fill="#B0B0B0"
-      />
-      <ellipse
-        opacity="0.7"
-        cx="12.4793"
-        cy="23.7601"
-        rx="3.2"
-        ry="2.32"
-        fill="#7B7B7B"
-      />
-      <ellipse
-        opacity="0.7"
-        cx="26.0789"
-        cy="23.7601"
-        rx="3.2"
-        ry="2.32"
-        fill="#7B7B7B"
-      />
-      <ellipse cx="16.7997" cy="21.12" rx="2.08" ry="3.2" fill="black" />
-      <ellipse cx="15.9999" cy="20.2402" rx="1.12" ry="1.36" fill="white" />
-      <ellipse cx="21.9198" cy="21.1202" rx="2.08" ry="3.2" fill="black" />
-      <ellipse cx="21.12" cy="20.2403" rx="1.12" ry="1.36" fill="white" />
-      <path
-        d="M18.2488 24.4702C18.1551 24.3765 18.0031 24.3765 17.9094 24.4702C17.8157 24.564 17.8157 24.7159 17.9094 24.8097L18.2488 24.4702ZM17.9094 24.8097L17.978 24.8783L18.3174 24.5389L18.2488 24.4702L17.9094 24.8097ZM20.5802 24.8783L20.6488 24.8097L20.3094 24.4702L20.2408 24.5389L20.5802 24.8783ZM17.978 24.8783C18.6966 25.5969 19.8616 25.5969 20.5802 24.8783L20.2408 24.5389C19.7097 25.07 18.8485 25.07 18.3174 24.5389L17.978 24.8783Z"
-        fill="black"
+        fill="currentColor"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88a9.95 9.95 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20"
       />
     </svg>
   );
@@ -82,9 +38,9 @@ export const DownArrowIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
     >
       <path
         fill="currentColor"
@@ -98,8 +54,8 @@ export const LocationIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
     >
       <path
@@ -114,8 +70,8 @@ export const TelIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
     >
       <path
@@ -130,13 +86,45 @@ export const BaseLineIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="32"
+      height="32"
       viewBox="0 0 24 24"
     >
       <path
         fill="currentColor"
         d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-7 0c.55 0 1 .45 1 1s-.45 1-1 1s-1-.45-1-1s.45-1 1-1m2 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
+      />
+    </svg>
+  );
+};
+
+export const MailIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="currentColor"
+        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5l8-5zm-8-7L4 6h16z"
+      />
+    </svg>
+  );
+};
+
+export const CalendarIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="currentColor"
+        d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3m6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1z"
       />
     </svg>
   );
