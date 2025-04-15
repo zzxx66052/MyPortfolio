@@ -3,6 +3,13 @@
 import { DownArrowIcon } from "../icons/icons";
 
 const HeroSection = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       className="flex h-[600px] items-center justify-center bg-cover bg-center text-white"
@@ -32,12 +39,7 @@ const HeroSection = () => {
           <p>이경민입니다.</p>
         </div>
         <button
-          onClick={() => {
-            const aboutSection = document.getElementById("about");
-            if (aboutSection) {
-              aboutSection.scrollIntoView({ behavior: "smooth" });
-            }
-          }}
+          onClick={scrollToAbout}
           className="flex items-center rounded-full bg-orange-500 px-6 py-2 font-bold text-white hover:bg-red-500 transition"
         >
           <span className="mr-1">더 알아보기</span>
