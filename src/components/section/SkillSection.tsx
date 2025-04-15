@@ -40,7 +40,7 @@ const skillsData = [
   {
     title: "DevOps",
     icon: <DevOpsIcon />,
-    items: [{ label: "Vercel", color: "bg-black text-white" }],
+    items: [{ label: "Vercel", color: "bg-gray-900 text-white" }],
   },
 ];
 
@@ -67,11 +67,14 @@ export default function SkillsSection() {
             <div className="w-[30px] h-[30px]">{icon}</div>
             <div className="flex flex-col gap-2">
               <span className="text-zinc-700">{title}</span>
-              <div className="flex flex-wrap gap-2">
+              <div
+                className="flex flex-wrap gap-2"
+                style={{ fontFamily: "yg-jalnan" }}
+              >
                 {items.map(({ label, color }) => (
                   <span
                     key={label}
-                    className={`px-3 py-1 rounded-md text-sm font-medium ${color}`}
+                    className={`px-3 py-1 rounded-md text-sm font-light ${color}`}
                   >
                     {label}
                   </span>

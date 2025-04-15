@@ -13,13 +13,13 @@ const config: Config = {
         desktop: "768px", // => @media (min-width: 1025px) { ... }
       },
       maxWidth: {
-        content: "1440px", //"max-w-content
+        content: "1440px",
       },
       boxShadow: {
         input: "0px 4px 14px 0px rgba(0, 0, 0, 0.05)",
       },
       letterSpacing: {
-        custom: "-0.252px", // 커스텀 값 추가
+        custom: "-0.252px",
         title: "-0.5px",
         content: "-0.4px",
       },

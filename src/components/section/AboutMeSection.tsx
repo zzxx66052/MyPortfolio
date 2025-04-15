@@ -12,7 +12,7 @@ import {
 
 const AboutMeSection = () => {
   return (
-    <section id="about" className="bg-white py-16 px-4">
+    <section id="about" className="scroll-mt-24 bg-white py-16 px-4">
       <div className="mx-auto max-w-6xl text-center">
         <div className="mb-12">
           <h2 className="flex items-center justify-center text-3xl font-extrabold text-black">
@@ -23,7 +23,10 @@ const AboutMeSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-y-8 gap-x-10 text-left sm:grid-cols-3">
+        <div
+          className="grid grid-cols-2 gap-y-8 gap-x-10 text-left sm:grid-cols-3"
+          style={{ fontFamily: "KakaoBigSans-ExtraBold" }}
+        >
           <div className="flex items-start gap-3">
             <MyProfileIcon />
             <div>
