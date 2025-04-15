@@ -9,7 +9,7 @@ const Header = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="hover:text-gray-500"
           >
-            K-lee's Portfolio
+            K-lee&apos;s Portfolio
           </button>
         </h1>
         <nav className="space-x-6 text-sm font-semibold">

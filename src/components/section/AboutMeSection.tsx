@@ -19,7 +19,7 @@ const AboutMeSection = () => {
             <BaseLineIcon /> <span className="ml-2">ABOUT ME</span>
           </h2>
           <div className="mt-2 flex justify-center">
-            <div className="h-1 w-20 bg-black" />
+            <div className="h-1 w-55 bg-black" />
           </div>
         </div>
 
