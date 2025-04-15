@@ -3,7 +3,10 @@
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-black p-6 text-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between">
+      <div
+        className="mx-auto flex max-w-6xl items-center justify-between"
+        style={{ fontFamily: "Cafe24Ohsquare" }}
+      >
         <h1 className="text-xl font-bold">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

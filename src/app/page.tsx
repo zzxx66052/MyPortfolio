@@ -4,6 +4,7 @@ import Header from "../components/layouts/Header";
 import HeroSection from "../components/layouts/HeroSection";
 import AboutMeSection from "../components/section/AboutMeSection";
 import ArchivingSection from "@/components/section/ArchivingSection";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SkillsSection />
       <ArchivingSection />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

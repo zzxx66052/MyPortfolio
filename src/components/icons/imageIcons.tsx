@@ -25,3 +25,7 @@ export const BackendIcon = () => (
 export const DevOpsIcon = () => (
   <Image src="/images/devOps.png" alt="DevOps Icon" width={30} height={30} />
 );
+
+export const UpArrowIcon = () => (
+  <Image src="/images/upArrow.png" alt="UpArrow Icon" width={30} height={30} />
+);
