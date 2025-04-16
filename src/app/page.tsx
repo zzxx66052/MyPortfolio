@@ -5,6 +5,7 @@ import HeroSection from "../components/layouts/HeroSection";
 import AboutMeSection from "../components/section/AboutMeSection";
 import ArchivingSection from "@/components/section/ArchivingSection";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+import ProjectSection from "@/components/section/ProjectSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutMeSection />
       <SkillsSection />
       <ArchivingSection />
+      <ProjectSection />
       <Footer />
       <ScrollToTopButton />
     </div>

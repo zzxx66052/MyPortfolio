@@ -7,7 +7,7 @@ const ArchivingSection = () => {
   return (
     <section
       id="archive"
-      className="scroll-mt-24 w-full bg-zinc-900 py-16 px-4 text-white flex flex-col items-center"
+      className="scroll-mt-24 w-full bg-purple-800 py-16 px-4 text-white flex flex-col items-center"
     >
       <h2 className="flex items-center justify-center text-3xl font-extrabold text-white">
         <BaseLineIcon /> <span className="ml-2">Archive</span>
