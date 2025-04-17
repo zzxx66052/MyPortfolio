@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { UpArrowIcon } from "./icons/imageIcons";
+import { useProjectModalStore } from "@/utils/store/useProjectModal";
 
 export const ScrollToTopButton = () => {
   const [show, setShow] = useState(false);
+  const { isOpen } = useProjectModalStore();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +20,7 @@ export const ScrollToTopButton = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  if (!show) return null;
+  if (!show || isOpen) return null;
 
   return (
     <button

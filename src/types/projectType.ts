@@ -5,8 +5,9 @@ export interface Project {
   siteUrl: string;
   image: string;
   date: string;
-  skills?: string[];
+  skills: { name: string; color: string }[];
   content?: string;
   architecture?: string;
+  videoUrl?: string;
   troubleshooting?: string;
 }

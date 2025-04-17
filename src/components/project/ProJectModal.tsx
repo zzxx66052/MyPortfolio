@@ -2,16 +2,29 @@
 
 import { useProjectModalStore } from "@/utils/store/useProjectModal";
 import Image from "next/image";
+import { useEffect } from "react";
 import { CloseIcon } from "../icons/icons";
 
 const ProjectModal = () => {
   const { selectedProject, isOpen, closeModal } = useProjectModalStore();
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   if (!isOpen || !selectedProject) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-      <div className="bg-white rounded-xl p-6 max-w-3xl w-full relative">
+      <div className="bg-white rounded-xl p-6 max-w-3xl w-full relative max-h-[90vh] overflow-y-auto">
         <button
           className="absolute top-3 right-3 text-black"
           onClick={closeModal}
@@ -22,6 +35,20 @@ const ProjectModal = () => {
         <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
         <p className="text-sm text-gray-600">{selectedProject.date}</p>
         <p className="mt-4">{selectedProject.content}</p>
+
+        {selectedProject.siteUrl && (
+          <div className="mt-6 flex flex-row">
+            <h3 className="text-lg font-semibold mb-2">사이트 주소 : </h3>
+            <a
+              href={selectedProject.siteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl ml-2 text-black underline break-all hover:text-blue-600 transition"
+            >
+              {selectedProject.siteUrl}
+            </a>
+          </div>
+        )}
 
         {selectedProject.architecture && (
           <div className="mt-6">
@@ -42,26 +69,33 @@ const ProjectModal = () => {
             <div className="flex flex-wrap gap-2">
               {selectedProject.skills.map((skill) => (
                 <span
-                  key={skill}
-                  className="bg-zinc-200 text-sm px-2 py-1 rounded"
+                  key={skill.name}
+                  className={`text-sm px-2 py-1 rounded ${skill.color}`}
                 >
-                  {skill}
+                  {skill.name}
                 </span>
               ))}
             </div>
           </div>
         )}
 
-        <div className="mt-6">
-          <a
-            href={selectedProject.siteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-2 text-blue-600 underline"
-          >
-            사이트 바로가기 →
-          </a>
-        </div>
+        {selectedProject.videoUrl && (
+          <div className="mt-6">
+            <h3 className="text-lg font-semibold mb-2">시연 영상</h3>
+            <div
+              className="relative w-full h-0"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <iframe
+                src={selectedProject.videoUrl}
+                title="시연 영상"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+              ></iframe>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
