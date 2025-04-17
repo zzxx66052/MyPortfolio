@@ -22,7 +22,12 @@ export const projects: Project[] = [
       { name: "React-Hook-Form", color: "bg-purple-500 text-white" },
       { name: "zod", color: "bg-indigo-400 text-white" },
     ],
+    wireframe: "/images/project/onson/onson_wireframe.png",
     videoUrl: "https://youtube.com/embed/uBWAiYlbgzk",
+    myPartPage: [
+      "/images/project/onson/Onson1.png",
+      "/images/project/onson/Onson2.png",
+    ],
   },
   {
     id: "duodingco",
@@ -43,6 +48,11 @@ export const projects: Project[] = [
       { name: "Zustand", color: "bg-neutral-500 text-white" },
       { name: "React-Hook-Form", color: "bg-purple-500 text-white" },
     ],
+    wireframe: "/images/project/duodingco/Dingco_wireframe.png",
     videoUrl: "https://youtube.com/embed/1rlFj3NN-D0",
+    myPartPage: [
+      "/images/project/duodingco/DuoDingco1.png",
+      "/images/project/duodingco/DuoDingco2.png",
+    ],
   },
 ];

@@ -56,8 +56,9 @@ const ProjectModal = () => {
             <Image
               src={selectedProject.architecture}
               alt="architecture"
-              width={600}
+              width={800}
               height={400}
+              style={{ width: "auto", height: "auto" }}
               className="rounded-lg"
             />
           </div>
@@ -89,13 +90,45 @@ const ProjectModal = () => {
               <iframe
                 src={selectedProject.videoUrl}
                 title="시연 영상"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
                 allowFullScreen
                 className="absolute top-0 left-0 w-full h-full rounded-lg"
               ></iframe>
             </div>
           </div>
         )}
+
+        {selectedProject.wireframe && (
+          <div className="mt-6">
+            <h3 className="text-lg font-semibold mb-2">와이어프레임</h3>
+            <Image
+              src={selectedProject.wireframe}
+              alt="Wireframe"
+              width={800}
+              height={400}
+              style={{ height: "auto" }}
+            />
+          </div>
+        )}
+
+        {selectedProject.myPartPage &&
+          selectedProject.myPartPage.length > 0 && (
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold mb-2">직접 구현한 페이지</h3>
+              <div className="grid grid-cols-1 mobile:grid-cols-2 gap-4">
+                {selectedProject.myPartPage.map((page, index) => (
+                  <Image
+                    key={index}
+                    src={page}
+                    alt={`Page ${index + 1}`}
+                    width={800}
+                    height={400}
+                    className="rounded-lg"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
       </div>
     </div>
   );

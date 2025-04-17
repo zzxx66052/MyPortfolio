@@ -9,5 +9,7 @@ export interface Project {
   content?: string;
   architecture?: string;
   videoUrl?: string;
+  wireframe: string;
+  myPartPage?: string[];
   troubleshooting?: string;
 }
