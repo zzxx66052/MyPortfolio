@@ -29,3 +29,7 @@ export const DevOpsIcon = () => (
 export const UpArrowIcon = () => (
   <Image src="/images/upArrow.png" alt="UpArrow Icon" width={30} height={30} />
 );
+
+export const CloverIcon = () => (
+  <Image src="/images/clover.png" alt="Clover Icon" width={30} height={30} />
+);

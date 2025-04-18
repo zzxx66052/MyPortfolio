@@ -1,3 +1,8 @@
+export interface TroubleshootingItem {
+  title: string;
+  description: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -11,5 +16,5 @@ export interface Project {
   videoUrl?: string;
   wireframe: string;
   myPartPage?: string[];
-  troubleshooting?: string;
+  troubleshooting?: TroubleshootingItem[];
 }

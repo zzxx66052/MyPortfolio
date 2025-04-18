@@ -4,6 +4,7 @@ import { useProjectModalStore } from "@/utils/store/useProjectModal";
 import Image from "next/image";
 import { useEffect } from "react";
 import { CloseIcon } from "../icons/icons";
+import { CloverIcon } from "../icons/imageIcons";
 
 const ProjectModal = () => {
   const { selectedProject, isOpen, closeModal } = useProjectModalStore();
@@ -125,6 +126,28 @@ const ProjectModal = () => {
                     height={400}
                     className="rounded-lg"
                   />
+                ))}
+              </div>
+            </div>
+          )}
+
+        {selectedProject.troubleshooting &&
+          selectedProject.troubleshooting.length > 0 && (
+            <div className="mt-6">
+              <div className="flex flex-row items-start mb-2">
+                <CloverIcon />
+                <h3 className="text-lg font-semibold ml-1">트러블슈팅</h3>
+              </div>
+              <div
+                className="space-y-3 text-sm leading-relaxed text-gray-700"
+                style={{ fontFamily: "KakaoBigSans-ExtraBold" }}
+              >
+                {selectedProject.troubleshooting.map((item, index) => (
+                  <div key={index}>
+                    <strong className="text-black">• {item.title}</strong>
+                    <br />
+                    {item.description}
+                  </div>
                 ))}
               </div>
             </div>
