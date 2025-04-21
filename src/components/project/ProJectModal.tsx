@@ -37,6 +37,23 @@ const ProjectModal = () => {
         <p className="text-sm text-gray-600">{selectedProject.date}</p>
         <p className="mt-4">{selectedProject.content}</p>
 
+        {selectedProject.team && (
+          <div className="mt-4 text-sm text-gray-700 space-y-1">
+            <p>
+              <strong className="text-black">총 인원 : </strong>
+              {selectedProject.team.total}명
+            </p>
+            <p>
+              <strong className="text-black">구성 : </strong>
+              {selectedProject.team.role}
+            </p>
+            <p>
+              <strong className="text-black">담당 역할 : </strong>
+              {selectedProject.team.myRole}
+            </p>
+          </div>
+        )}
+
         {selectedProject.siteUrl && (
           <div className="mt-6 flex flex-row">
             <h3 className="text-lg font-semibold mb-2">사이트 주소 : </h3>

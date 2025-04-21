@@ -15,7 +15,7 @@ const HeroSection = () => {
       className="flex h-screen items-center justify-center bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/images/heroSection.png')" }}
     >
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center text-center mx-4">
         <div className="mb-4" style={{ fontFamily: "SBAggroB" }}>
           <h2 className="text-5xl font-extrabold mb-4">- 이경민 -</h2>
           <p className="text-3xl font-bold mb-8">

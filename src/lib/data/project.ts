@@ -24,6 +24,12 @@ export const projects: Project[] = [
     ],
     wireframe: "/images/project/onson/onson_wireframe.png",
     videoUrl: "https://youtube.com/embed/uBWAiYlbgzk",
+    team: {
+      total: 6,
+      role: "프론트엔드 개발자 5명, 디자이너 1명",
+      myRole:
+        "채팅 기능 개발, 헤더 및 푸터 레이아웃 조정, 봉사 참여자 리스트 제작",
+    },
     myPartPage: [
       "/images/project/onson/Onson1.png",
       "/images/project/onson/Onson2.png",
@@ -72,6 +78,11 @@ export const projects: Project[] = [
     ],
     wireframe: "/images/project/duodingco/Dingco_wireframe.png",
     videoUrl: "https://youtube.com/embed/1rlFj3NN-D0",
+    team: {
+      total: 5,
+      role: "프론트엔드 개발자 5명",
+      myRole: "듀오딩코 CRUD 기능 구현 및 카드 정보 페이지 제작",
+    },
     myPartPage: [
       "/images/project/duodingco/DuoDingco1.png",
       "/images/project/duodingco/DuoDingco2.png",

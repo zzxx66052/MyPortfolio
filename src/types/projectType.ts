@@ -16,5 +16,10 @@ export interface Project {
   videoUrl?: string;
   wireframe: string;
   myPartPage?: string[];
+  team: {
+    total: number;
+    role: string;
+    myRole: string;
+  };
   troubleshooting?: TroubleshootingItem[];
 }
