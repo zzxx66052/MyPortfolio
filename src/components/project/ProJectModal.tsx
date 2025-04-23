@@ -10,22 +10,34 @@ const ProjectModal = () => {
   const { selectedProject, isOpen, closeModal } = useProjectModalStore();
 
   useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    };
+
     if (isOpen) {
+      document.addEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
     }
 
     return () => {
+      document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "auto";
     };
-  }, [isOpen]);
+  }, [isOpen, closeModal]);
 
   if (!isOpen || !selectedProject) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-      <div className="bg-white rounded-xl p-6 max-w-3xl w-full relative max-h-[90vh] overflow-y-auto">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+      onClick={closeModal}
+    >
+      <div
+        className="bg-white rounded-xl p-6 max-w-3xl w-full relative max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           className="absolute top-3 right-3 text-black"
           onClick={closeModal}
