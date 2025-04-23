@@ -1,7 +1,7 @@
 import { projects } from "@/lib/data/project";
+import { BaseLineIcon } from "../icons/icons";
 import ProjectCard from "../project/ProjectCard";
 import ProjectModal from "../project/ProJectModal";
-import { BaseLineIcon } from "../icons/icons";
 
 const ProjectSection = () => {
   return (

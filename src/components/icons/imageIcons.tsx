@@ -10,12 +10,14 @@ export const LanguageIcon = () => (
 );
 
 export const FrontendIcon = () => (
-  <Image
-    src="/images/frontEnd.png"
-    alt="Frontend Icon"
-    width={30}
-    height={30}
-  />
+  <div className="w-[30px] h-[30px] flex items-center justify-center">
+    <Image
+      src="/images/frontEnd.png"
+      alt="Frontend Icon"
+      width={30}
+      height={30}
+    />
+  </div>
 );
 
 export const BackendIcon = () => (

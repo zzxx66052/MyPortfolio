@@ -1,8 +1,8 @@
 "use client";
 
+import { useProjectModalStore } from "@/utils/store/useProjectModal";
 import { useEffect, useState } from "react";
 import { UpArrowIcon } from "./icons/imageIcons";
-import { useProjectModalStore } from "@/utils/store/useProjectModal";
 
 export const ScrollToTopButton = () => {
   const [show, setShow] = useState(false);

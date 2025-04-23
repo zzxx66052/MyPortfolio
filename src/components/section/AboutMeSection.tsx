@@ -24,7 +24,7 @@ const AboutMeSection = () => {
         </div>
 
         <div
-          className="grid grid-cols-2 gap-y-8 gap-x-10 text-left sm:grid-cols-3"
+          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8 text-left"
           style={{ fontFamily: "KakaoBigSans-ExtraBold" }}
         >
           <div className="flex items-start gap-3">
@@ -63,7 +63,9 @@ const AboutMeSection = () => {
             <MailIcon />
             <div>
               <p className="font-semibold text-gray-800">이메일</p>
-              <p className="text-sm text-gray-600">zzxx66052@naver.com</p>
+              <p className="text-sm text-gray-600 break-all">
+                zzxx66052@naver.com
+              </p>
             </div>
           </div>
 
